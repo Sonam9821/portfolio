@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonam's Portfolio site </title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/dba2042fbe.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo-removebg-preview.png"class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full stack developer</p>
+                <h1>Hi, I'm <span>Sonam</span> <br>From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/sp.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem aperiam cumque explicabo natus voluptate laudantium rerum illo, fuga, quis voluptatum nobis non a quam quasi unde tempore odio, dolorum earum? Enim vero fugiat deleniti sequi, quidem, eveniet animi error deserunt cupiditate eaque, eligendi nesciunt culpa aliquam voluptatum adipisci? Minus, laboriosam!</p>
+                       <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                
+                       </div>
+                       <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full Stack Development</span><br>Designing Web/App 
+                                interfaces</li>
+                            <li><span>Blockchain Development</span><br>Designing dApps & Smart 
+                                Contracts <br> on blockchain technology</li>
+                            <li><span>Machine Learning Developer</span><br>Developing 
+                                  Algorithms</li>
+                        </ul>
+                       </div>
+
+                       <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>2023-Current</span><br>Voting machine using blockchain</li>
+                            <li><span>2022-2023</span><br>Sales Pridiction based on machine 
+                                 Learning </li>
+                            <li><span>2021-2022</span><br>MyVeGo App</li>
+                        </ul>
+                       </div>
+                       <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-current</span><br>Pursuing Btech in CSE from GCET</li>
+                            <li><span>2018-19</span><br>12th from J.n.v Jhansi.</li>
+                            <li><span>2016-17</span><br>10th from j.n.v Jhansi.</li>
+                        </ul>
+                       </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------services-------------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae obcaecati, 
+                         dolorum optio enim asperiores non reprehenderit quaerat? Velit facere 
+                           quisquam laborum iure atque ipsam dolorem, architecto repellendus 
+                            veritatis asperiores expedita excepturi facilis ipsum eaque.</p>
+                            <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-ethereum"></i>
+                    <h2>blockchain Design </h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae obcaecati, 
+                         dolorum optio enim asperiores non reprehenderit quaerat? Velit facere 
+                           quisquam laborum iure atque ipsam dolorem, architecto repellendus 
+                            veritatis asperiores expedita excepturi facilis ipsum eaque.</p>
+                            <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Machine Learning Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae obcaecati, 
+                         dolorum optio enim asperiores non reprehenderit quaerat? Velit facere 
+                           quisquam laborum iure atque ipsam dolorem, architecto repellendus 
+                            veritatis asperiores expedita excepturi facilis ipsum eaque.</p>
+                            <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------portfolio------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Pizza delivery web page</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur 
+                             adipisicing elit. Quas voluptas assumenda, 
+                              minima itaque modi repella</p>
+                              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/images.png" alt="">
+                    <div class="layer">
+                        <h3>voting machine app</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur 
+                             adipisicing elit. Quas voluptas assumenda, 
+                              minima itaque modi repella</p>
+                              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.jpg" alt="">
+                    <div class="layer">
+                        <h3>machine Learning </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur 
+                             adipisicing elit. Quas voluptas assumenda, 
+                              minima itaque modi repella</p>
+                              <a href="#"><i class="fa-solid fa-up-right- 
+                                 from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!------------------------------------contact-------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"> 
+                </i>contact@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>987654321</p>
+                <div class="social-icons">
+                    <a href="http://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter-square"></i> 
+                     </a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/dbms3.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" 
+                     required>
+                     <input type="email" name="Email" placeholder="Your E-
+mail" required>
+                      <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                       <button type="Submit" class="btn 
+                        btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Sonam. Made with <i class="fa-solid fa-heart"></i> </p>
+        </div>
+    </div>
+</div>
+
+  <script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks ){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents ){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+  </script>
+  <script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+  </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
